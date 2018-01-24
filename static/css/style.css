@@ -1,0 +1,140 @@
+/*
+Template: Effacy - Creative One Page Template
+Author: ThemeBite
+Author URI: http://themebite.com/
+Version: 1.0
+Designed and Developed by: ThemeBite
+*/
+
+
+/*
+====================================
+[ CSS TABLE OF CONTENT ]
+------------------------------------
+    1.0 - Base Styles
+    2.0 - Typography
+    3.0 - Global Style
+    4.0 - Navigation
+    5.0 - Hero Section
+    6.0 - About Us Section
+    7.0 - Testimonial Section
+    8.0 - Creative Section
+    9.0 - Awards Section
+    10.0 - Pricing And Plans Section
+    10.0 - Our Partners Section
+    11.0 - Blog Section
+    12.0 - Contact Section
+    13.0 - Google Map Section
+    14.0 - Footer Section
+-------------------------------------
+[ END CSS TABLE OF CONTENT ]
+=====================================
+*/
+
+/* ============================
+    Base Styles
+=============================== */
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+    background: #323232;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+
+html,
+body {
+    color: #434242;
+    width: 100%;
+    height: 100%;
+}
+
+/* ============================
+    Jumbotron Section
+=============================== */
+
+
+/* ============================
+    Global Styles
+=============================== */
+
+.jumbotron {
+    background-image: no-repeat center right fixed url("img/minimalist.png");
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/minimalist.png', sizingMethod='scale')";
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/minimalist.png', sizingMethod='scale');
+
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.jumbotron .overlay {
+    background-color: #22A39F;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.75;
+    filter:alpha(opacity=75);
+    z-index: 2;
+}
+
+.jumbotron .container {
+    position: relative;
+    top: 28%;
+    z-index: 4;
+    text-align: center;
+}
+.jumbotron .container > * {
+    text-align: center;
+    color: #FFFFFF;
+}
+.jumbotron .container h1 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #FFFFFF;
+    border-bottom-color: rgba(255,255,255,0.35);
+    display: inline-block; }
+.jumbotron .container .lead {
+    font-size: 28px;
+}
+
+.jumbotron .scroll-down .glyphicon {
+  	color: #FFFFFF;
+  	font-size: 30px;
+  	padding-right: 2px;
+  	padding-top: 20px;
+
+  	animation-name: wiggle;
+  	animation-duration: 1.2s;
+  	animation-timing-function: linear;
+  	animation-iteration-count: infinite;
+  	animation-direction: normal;
+}
+.jumbotron .scroll-down:hover .glyphicon {
+    padding-top: 25px;
+}
+
+p.lead {
+  text-align: center; color: #727878;
+}
+p.lead a {
+  color: #FFFFFF; text-decoration: underline;
+}
+p.lead a:hover {
+  text-decoration: none;
+}
