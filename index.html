@@ -32,18 +32,23 @@
       <!-- <script src="/static/js/modernizr-2.8.3.min.js"></script> -->
 
   </head>
+  <!-- Start Header area -->
   <body data-spy="scroll" data-target="#navbar-example">
-    <div id="top" class="jumbotron" data-src="/static/img/minimalist.png" data-position="center center">
+    <section class = "jumbotron-section jumbotron-particle-bg parallax" id="top" data-stellar-background-ratio="0.1" style="background-position: 50% 50%;">
+      <div id="particles-js">
+        <canvas class="background"></canvas>
+      </div>
       <div class="container">
         <h1>Hi! I'm Tamara</h1>
-        <p class="lead">[  təˈmɑːrə ]</p>
+        <p class="lead">[ təˈmɑːrə ]</p>
       </div>
       <div class="overlay"></div>
       <a href="profile" class="scroll-down">
         <span class="glyphicon glyphicon-chevron-down"></span>
       </a>
-    </div>
-
+    </section>
+    <!-- End Header area -->
+    <!-- Start Navigation area -->
     <nav class="navbar navbar-default" id="navbar-example" role="navigation">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -65,6 +70,7 @@
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</nav>
+    <!-- End Navigation area -->
 
     <!-- JS Files -->
     <!-- Bootstrap JS -->
@@ -72,10 +78,9 @@
 
     <!-- Particle JS -->
     <script src="/static/js/particles.min.js"></script>
-    <!-- <script src="/static/js/particles-config.js"></script> -->
 
     <!-- Background Prallax -->
-    <!-- <script src="/static/js/jquery.stellar.min.js"></script> -->
+    <script src="/static/js/jquery.stellar.min.js"></script>
 
     <!-- Simple Lightbox -->
     <script src="/static/js/simple-lightbox.min.js"></script>
