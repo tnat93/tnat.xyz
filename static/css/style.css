@@ -13,7 +13,7 @@ Designed and Developed by: ThemeBite
     2.0 - Typography
     3.0 - Global Style
     4.0 - Navbar Section
-    5.0 - Hero Section
+    5.0 - Header
     6.0 - About Us Section
     7.0 - Testimonial Section
     8.0 - Creative Section
@@ -33,45 +33,116 @@ Designed and Developed by: ThemeBite
     Base Styles
 =============================== */
 body{
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    line-height: 30px;
+    background: #989898;
+    font-size: 15px;
+    line-height: 1.64;
     font-weight: 400;
-    color: #ffffff;
-    background: #323232;
-    overflow-x: hidden;
-    -webkit-font-smoothing: antialiased !important;
 }
 
 
 html,
 body {
-    color: #434242;
-    width: 100%;
+    color: #323232;
+    font-family: 'Raleway', sans-serif !important;
     height: 100%;
+}
+
+span {
+  color: #00c5cd;
+}
+
+/* ============================
+    Typography
+=============================== */
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+h1,h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+h2,h3 {
+  font-weight: 300;
+  color: #00c5cd;
+}
+
+h2 {
+  font-size: 54px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 900;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+hr {
+  margin: 40px 0px;
+  border-color: #727878;
+  opacity: 0.2;
+  filter:alpha(opacity=20);
 }
 
 /* ============================
     Global Styles
 =============================== */
 
+.container {
+  position: relative;
+  max-width: 379px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.container.container--large {
+  max-width: 525px;
+}
+
+.container.container--large p {
+  max-width: 377px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.9;
+}
+
 p.lead {
-  text-align: center; color: #727878;
+  text-align: center;
+  color: #727878;
 }
 p.lead a {
-  color: #FFFFFF; text-decoration: underline;
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 p.lead a:hover {
   text-decoration: none;
 }
 
 /* ============================
-    Navbar Section
+    Navbar
 =============================== */
 
 .navbar  {
   border: 0px;
-  background-color: #222222;
+  background-color: #989898;
   position: absolute;
   top: 100%;
   right: 5%;
@@ -105,11 +176,11 @@ p.lead a:hover {
   color: #999999;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  background: #22A39F; color: #FFFFFF;
+  background: #00c5cd; color: #FFFFFF;
 }
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar {
-  background: #222222;
+  background: #989898;
 }
 
 .fixed .navbar  {
@@ -117,91 +188,120 @@ p.lead a:hover {
 }
 
 /* ============================
-    Jumbotron Section
+    Header
 =============================== */
 
-.jumbotron-particle-bg {
-    background: url("../img/minimalist.png") no-repeat scroll center center / cover ;
-}
-.jumbotron-particle-bg:before , .jumbotron-particle-bg:before , .text-rotator-bg:before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    content: "";
-    width: 100%;
+.header {
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: url("../img/minimalist.png") bottom no-repeat;
+    background-size: cover;
 }
 
-.jumbotron .overlay {
-    background-color: #22A39F;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    opacity: 0.75;
-    filter:alpha(opacity=75);
-    z-index: 2;
+.header .container {
+  z-index: 10;
 }
 
-.jumbotron .container {
-    position: relative;
-    top: 28%;
-    z-index: 4;
-    text-align: center;
-}
-.jumbotron .container > * {
-    text-align: center;
-    color: #FFFFFF;
-}
-.jumbotron .container h1 {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #FFFFFF;
-    border-bottom-color: rgba(255,255,255,0.35);
-    display: inline-block; }
-.jumbotron .container .lead {
-    font-size: 28px;
+.header .header__introduction {
+  padding-top: 80%;
+  color: #989898;
 }
 
-.jumbotron .scroll-down .glyphicon {
-  	color: #FFFFFF;
-  	font-size: 30px;
-  	padding-right: 2px;
-  	padding-top: 20px;
-
-  	animation-name: wiggle;
-  	animation-duration: 1.2s;
-  	animation-timing-function: linear;
-  	animation-iteration-count: infinite;
-  	animation-direction: normal;
-}
-.jumbotron .scroll-down:hover .glyphicon {
-    padding-top: 25px;
+.header .header__introduction p {
+  opacity: 0.9;
+  color: #989898
 }
 
-#particles-js {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: 0;
+.header .header__background {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
 .background-white {
   background: #FFFFFF;
 }
+
 .background-gray {
   background: #434242;
 }
-.container {
-  max-width: 1280px;
-  padding: 40px 180px;
+
+.header .header__scroll {
+  height: 80px;
+  width: 110px;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  right: 5%;
+  background-color: #989898;
+  text-align: center;
+  z-index: 6;
+}
+.header .header__scroll .glyphicon {
+	color: #FFFFFF;
+	font-size: 30px;
+	padding-right: 2px;
+	padding-top: 20px;
+
+	animation-name: wiggle;
+	animation-duration: 1.2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+.header .header__scrolln:hover .glyphicon {
+  padding-top: 25px;
 }
 
-#profile .row > div {
+/* ============================
+    About Me Section
+=============================== */
+
+.aboutme-container {
+  max-width: 1280px;
+  padding: 40px 180px;
+  margin: 0 auto;
+}
+
+#aboutme .row > div {
   margin-bottom: 20px;
 }
-#profile .row > div img {
-  width: 100%; max-width: 246px; height: auto;
+
+#aboutme .row p {
+  text-align: left;
+}
+
+#aboutme .row > div img {
+  width: 100%;
+  max-width: 246px;
+  height: auto;
+}
+
+/* ============================
+    Footer Section
+=============================== */
+.footer {
+    background: #000;
+}
+.footer .copyright-info a {
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
+}
+.social-icons a .fa {
+    background: #343434 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 2px;
+    padding: 10px 12px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+            transition: all 0.3s ease-in-out 0s;
+    vertical-align: middle;
 }
