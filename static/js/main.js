@@ -7,26 +7,42 @@ Developed and Designed By: ThemeBite + bits by Tamara Natasya
 */
 
 $(window).load(function() {
-2   Particles.init({
-3     selector: '.background'
-4   });
-
-"use strict";
-
-    // Parallax Effect
-    (function() {
-
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-
-        } else {
-            $(window).stellar({
-                horizontalScrolling: false,
-                responsive: true,
-            });
+  Particles.init({
+    selector: '.header__background',
+    color: '#FFFFFF',
+    maxParticles: 130,
+    connectParticles: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        options: {
+          maxParticles: 80
         }
+      }, {
+        breakpoint: 375,
+        options: {
+          maxParticles: 50
+        }
+      }
+    ]
+  });
 
-    }());
-5 };
+  "use strict";
+
+  // Parallax Effect
+  (function() {
+
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+      } else {
+          $(window).stellar({
+              horizontalScrolling: false,
+              responsive: true,
+          });
+      }
+
+  }());
+});
 
 var lnStickyNavigation;
 
@@ -41,7 +57,6 @@ $(document).ready(function()
 });
 
 /* HEADER FUNCTIONS */
-
 function applyHeader()
 {
 	$('.jumbotron').css({ height: ($(window).height()) +'px' });
@@ -78,7 +93,6 @@ function applyClickEvent()
 	$('a[href*=#]').on('click', function(e)
 	{
 		e.preventDefault();
-
 		if( $( $.attr(this, 'href') ).length > 0 )
 		{
 			$('html, body').animate(
