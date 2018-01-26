@@ -33,44 +33,94 @@
 
   </head>
   <!-- Start Header area -->
-  <body data-spy="scroll" data-target="#navbar-example">
-    <section class = "jumbotron-section jumbotron-particle-bg parallax" id="top" data-stellar-background-ratio="0.1" style="background-position: 50% 50%;">
-      <div id="particles-js">
-        <canvas class="background"></canvas>
-      </div>
+  <body>
+    <header class="header">
       <div class="container">
-        <h1>Hi! I'm Tamara</h1>
-        <p class="lead">[ təˈmɑːrə ]</p>
+        <div class="header__introduction">
+          <h1>Hi! I'm Tamara</h1>
+          <hr />
+          <h4>[ təˈmɑːrə ]</h4>
+        </div>
       </div>
-      <div class="overlay"></div>
-      <a href="profile" class="scroll-down">
-        <span class="glyphicon glyphicon-chevron-down"></span>
-      </a>
-    </section>
-    <!-- End Header area -->
-    <!-- Start Navigation area -->
-    <nav class="navbar navbar-default" id="navbar-example" role="navigation">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#aboutme">About Me</a></li>
-					<li><a href="#experience">Experience</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div><!-- /.navbar-collapse -->
-		</nav>
-    <!-- End Navigation area -->
+      <a class="header__scroll scroll" href="#aboutme">
+				<i class="fa fa-chevron-down fa-3x" aria-hidden="true"></i>
+			</a>
+
+      <!-- Start Navigation area -->
+      <nav class="navbar navbar-default" id="navbar-example" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#aboutme">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+      <!-- End Navigation area -->
+
+      <canvas class="header__background"></canvas>
+    </header>
+    <!-- End Header area -->
+
+    <!-- Start About Me section -->
+    <div class="background-white">
+			<div id="aboutme" class="aboutme-container">
+				<h2>About Me</h2>
+        <hr />
+        <div class="row">
+        	<div class="col-md-4">
+        		<p>Electrical engineer with an interest in low-level hardware design. Born in Singapore, raised in Houston, TX. Recently graduated from The University of Texas at San Antonio. Hobbies include: web development, yoga, video games, pilates, exploring new restaurants, and traveling. </p>
+        	</div>
+        	<div class="col-md-4 text-center">
+        		<img src="/static/img/tamaranatasya.jpg" alt="Tamara Natasya" width="236" height="236" />
+        	</div>
+        	<div class="col-md-4">
+        		<h3>Details</h3>
+        		<p>
+        			<strong>Name:</strong><br />
+        			Tamara Natasya<br />
+        			<strong>Location:</strong><br />
+        			Austin, TX, USA</p>
+        	</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End About Me section -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text center">
+            <div class="copyright-info">
+              <span>
+                <i class="fa fa-code" aria-hidden="true"></i>
+              </span>
+              <a>with</a>
+              <span>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </span>
+              <a> by </a>
+              <span>Tamara Natasya</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
 
     <!-- JS Files -->
     <!-- Bootstrap JS -->
