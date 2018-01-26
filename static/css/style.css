@@ -5,8 +5,6 @@ Author URI: http://themebite.com/
 Version: 1.0
 Designed and Developed by: ThemeBite
 */
-
-
 /*
 ====================================
 [ CSS TABLE OF CONTENT ]
@@ -14,7 +12,7 @@ Designed and Developed by: ThemeBite
     1.0 - Base Styles
     2.0 - Typography
     3.0 - Global Style
-    4.0 - Navigation
+    4.0 - Navbar Section
     5.0 - Hero Section
     6.0 - About Us Section
     7.0 - Testimonial Section
@@ -54,32 +52,85 @@ body {
 }
 
 /* ============================
-    Jumbotron Section
-=============================== */
-
-
-/* ============================
     Global Styles
 =============================== */
 
-.jumbotron {
-    background-image: no-repeat center right fixed url("img/minimalist.png");
+p.lead {
+  text-align: center; color: #727878;
+}
+p.lead a {
+  color: #FFFFFF; text-decoration: underline;
+}
+p.lead a:hover {
+  text-decoration: none;
+}
 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+/* ============================
+    Navbar Section
+=============================== */
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.navbar  {
+  border: 0px;
+  background-color: #222222;
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  width: 110px;
+  z-index: 999;
+}
+.navbar .navbar-collapse {
+  padding: 0px;
+  max-height: none;
+}
+.navbar .navbar-nav {
+  float: none;
+}
+.navbar-nav {
+  margin: 0px;
+}
+.navbar .nav > li {
+  display: block;
+  float: none;
+  height: 80px;
+}
+.navbar .nav > li a {
+  display: block;
+  height: 80px;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.navbar .nav > li a:hover, .navbar .nav > li a:focus {
+  color: #999999;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background: #22A39F; color: #FFFFFF;
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background: #222222;
+}
 
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/minimalist.png', sizingMethod='scale')";
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/minimalist.png', sizingMethod='scale');
+.fixed .navbar  {
+  position: fixed; top: 60px;
+}
 
-    margin-bottom: 0px;
-    padding: 0px;
+/* ============================
+    Jumbotron Section
+=============================== */
+
+.jumbotron-particle-bg {
+    background: url("../img/minimalist.png") no-repeat scroll center center / cover ;
+}
+.jumbotron-particle-bg:before , .jumbotron-particle-bg:before , .text-rotator-bg:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .jumbotron .overlay {
@@ -129,12 +180,28 @@ body {
     padding-top: 25px;
 }
 
-p.lead {
-  text-align: center; color: #727878;
+#particles-js {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
-p.lead a {
-  color: #FFFFFF; text-decoration: underline;
+
+.background-white {
+  background: #FFFFFF;
 }
-p.lead a:hover {
-  text-decoration: none;
+.background-gray {
+  background: #434242;
+}
+.container {
+  max-width: 1280px;
+  padding: 40px 180px;
+}
+
+#profile .row > div {
+  margin-bottom: 20px;
+}
+#profile .row > div img {
+  width: 100%; max-width: 246px; height: auto;
 }
