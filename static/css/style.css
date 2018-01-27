@@ -14,8 +14,8 @@ Designed and Developed by: ThemeBite
     3.0 - Global Style
     4.0 - Navbar Section
     5.0 - Header
-    6.0 - About Us Section
-    7.0 - Testimonial Section
+    6.0 - About Me
+    7.0 - Experience
     8.0 - Creative Section
     9.0 - Awards Section
     10.0 - Pricing And Plans Section
@@ -57,7 +57,7 @@ span {
 
 h1 {
   margin-bottom: 30px;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 300;
 }
 
@@ -97,7 +97,6 @@ a {
 hr {
   margin: 40px 0px;
   border-color: #727878;
-  opacity: 0.2;
   filter:alpha(opacity=20);
 }
 
@@ -126,12 +125,13 @@ hr {
 
 p.lead {
   text-align: center;
-  color: #727878;
 }
+
 p.lead a {
   color: #FFFFFF;
   text-decoration: underline;
 }
+
 p.lead a:hover {
   text-decoration: none;
 }
@@ -142,7 +142,7 @@ p.lead a:hover {
 
 .navbar  {
   border: 0px;
-  background-color: #989898;
+  background-color: #323232;
   position: absolute;
   top: 100%;
   right: 5%;
@@ -176,11 +176,12 @@ p.lead a:hover {
   color: #999999;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  background: #00c5cd; color: #FFFFFF;
+  background: #00c5cd; 
+  color: #FFFFFF;
 }
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar {
-  background: #989898;
+  background: #323232;
 }
 
 .fixed .navbar  {
@@ -207,12 +208,12 @@ p.lead a:hover {
 }
 
 .header .header__introduction h1 {
-  color: #323232;
+  color: #FFFFFF;
 }
 
 .header .header__introduction p {
 /*  opacity: 0.9;*/
-  color: #323232;
+  color: #FFFFFF;
 }
 
 .header .header__background {
@@ -240,7 +241,7 @@ p.lead a:hover {
   position: absolute;
   bottom: 0px;
   right: 5%;
-  background-color: #989898;
+  background-color: #323232;
   text-align: center;
   z-index: 6;
 }
@@ -266,7 +267,7 @@ p.lead a:hover {
 
 .aboutme-container {
   max-width: 1280px;
-  padding: 60px 180px;
+  padding: 70px 180px;
   margin: 0 auto;
 }
 
@@ -282,6 +283,48 @@ p.lead a:hover {
   width: 100%;
   max-width: 246px;
   height: auto;
+}
+
+/* ============================
+    Experience
+=============================== */
+
+.project-referal { 
+  margin-top: 40px; 
+}
+
+.btn-primary { 
+  background-color: #00C5CD; 
+  border-color: #1c8784; 
+}
+
+.btn-primary:hover { 
+  background-color: #1c8784;  
+  border-color: #1c8784; 
+}
+
+.experience-container {
+  max-width: 1280px;
+  padding: 60px 180px;
+  margin: 0 auto;
+}
+
+#experience .row > div {
+  margin-bottom: 20px;
+}
+
+/* ============================
+    Projects
+=============================== */
+
+.projects-container {
+  max-width: 1280px;
+  padding: 60px 180px;
+  margin: 0 auto;
+}
+
+#experience .row > div {
+  margin-bottom: 20px;
 }
 
 /* ============================

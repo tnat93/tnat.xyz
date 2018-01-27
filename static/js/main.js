@@ -155,6 +155,18 @@ function applyResize()
 	});
 }
 
+/* HASH FUNCTION */
+
+function checkHash()
+{
+	lstrHash = window.location.hash.replace('#/', '#');
+	
+	if($('a[href='+ lstrHash +']').length > 0)
+	{
+		$('a[href='+ lstrHash +']').trigger('click');
+	}
+}
+
 /* IE7- FALLBACK FUNCTIONS */
 
 function checkBrowser()
