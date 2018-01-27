@@ -193,7 +193,7 @@ p.lead a:hover {
 
 .header {
     height: 100%;
-    background: url("../img/minimalist.png") bottom no-repeat;
+    background: url("../img/aqua.png") bottom no-repeat;
     background-size: cover;
 }
 
@@ -206,9 +206,13 @@ p.lead a:hover {
   color: #FFFFFF;
 }
 
+.header .header__introduction h1 {
+  color: #323232;
+}
+
 .header .header__introduction p {
 /*  opacity: 0.9;*/
-  color: #989898
+  color: #323232;
 }
 
 .header .header__background {
