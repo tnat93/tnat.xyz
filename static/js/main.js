@@ -10,7 +10,7 @@ $(window).load(function() {
   Particles.init({
     selector: '.header__background',
     color: '#FFFFFF',
-    maxParticles: 130,
+    maxParticles: 100,
     connectParticles: true,
     responsive: [
       {
@@ -50,7 +50,7 @@ $(document).ready(function()
 {
 	applyHeader();
 	applyNavigation();
-	applyMailTo();
+	// applyMailTo();
 	applyResize();
 	checkHash();
 	checkBrowser();

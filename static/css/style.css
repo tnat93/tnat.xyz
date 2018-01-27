@@ -202,12 +202,12 @@ p.lead a:hover {
 }
 
 .header .header__introduction {
-  padding-top: 80%;
-  color: #989898;
+  padding-top: 60%;
+  color: #FFFFFF;
 }
 
 .header .header__introduction p {
-  opacity: 0.9;
+/*  opacity: 0.9;*/
   color: #989898
 }
 
@@ -262,7 +262,7 @@ p.lead a:hover {
 
 .aboutme-container {
   max-width: 1280px;
-  padding: 40px 180px;
+  padding: 60px 180px;
   margin: 0 auto;
 }
 
