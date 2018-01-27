@@ -176,7 +176,7 @@ p.lead a:hover {
   color: #999999;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  background: #00c5cd; 
+  background: #00c5cd;
   color: #FFFFFF;
 }
 .navbar-default .navbar-toggle:hover .icon-bar,
@@ -289,18 +289,18 @@ p.lead a:hover {
     Experience
 =============================== */
 
-.project-referal { 
-  margin-top: 40px; 
+.project-referal {
+  margin-top: 40px;
 }
 
-.btn-primary { 
-  background-color: #00C5CD; 
-  border-color: #1c8784; 
+.btn-primary {
+  background-color: #00C5CD;
+  border-color: #1c8784;
 }
 
-.btn-primary:hover { 
-  background-color: #1c8784;  
-  border-color: #1c8784; 
+.btn-primary:hover {
+  background-color: #1c8784;
+  border-color: #1c8784;
 }
 
 .experience-container {
@@ -323,7 +323,7 @@ p.lead a:hover {
   margin: 0 auto;
 }
 
-#experience .row > div {
+#projects .row > div {
   margin-bottom: 20px;
 }
 
