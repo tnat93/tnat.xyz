@@ -39,7 +39,7 @@
         <div id="top" class="header__introduction">
           <h1>Hi! I'm Tamara</h1>
           <hr />
-          <p>"One must be sane to think clearly, but one can think deeply and be quite insane." <br /> -- <i>Nikola Tesla</i></p>
+          <p>&ldquo;Do or do not. There is no try.&rdquo; <br /> -- <i>Yoda</i></p>
         </div>
       </div>
 
@@ -110,11 +110,87 @@
           &ldquo;Each day we go into our work in the hopes of discovering.&rdquo;<br />- Nikola Tesla
         </p>
 
-    <hr />
-
-    <div class="text-center project-referal">
-      <a href="https://resume.creddle.io/resume/b31hjruyzby" class="btn btn-primary" target="_blank">Check out my resume!</a>
-    </div>
+      <hr />
+      <!-- Jobs -->
+      <!-- Samsung -->
+      <div class="experience row">
+    		<div class="col-md-4">
+    			<h4>Samsung Austin Semiconductor</h4>
+    			<p class="experience-period"> June 2016 - current	</p>
+          <span class="experience-details">
+            <span class="location">
+              <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+              Austin, TX
+            </span>
+          </span>
+    		</div>
+    		<div class="col-md-8">
+    			<p>
+    				<strong>Defect Engineer</strong>
+    				<span class="hidden-phone">
+              <ul>
+                <li>Performed duties as a systems owner, as well as a backup database admin.</li>
+                <li>Maintained and continuously updated internal data processing and analysis website that was created using HTML, Javascript, JQuery, and Bootstrap.</li>
+                <li>Created new web pages and application on website for internal customers.</li>
+                <li>Created new databases and tables in Microsoft SQL Server, as well as efficiently optimized and normalized old databases to decrease hard drive space.</li>
+              </ul>
+    				</span>
+    			</p>
+    		</div>
+    	</div>
+      <!-- Freescale 2015 -->
+      <div class="experience row">
+    		<div class="col-md-4">
+    			<h4>NXP Semiconductors</h4>
+    			<p class="experience-period"> May 2015 - July 2015 </p>
+          <span class="experience-details">
+            <span class="location">
+              <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+              Austin, TX
+            </span>
+          </span>
+    		</div>
+    		<div class="col-md-8">
+    			<p>
+    				<strong>SoC Design Integration Intern</strong>
+    				<span class="hidden-phone">
+              <ul>
+                <li>Performed RTL Power Analysis on different technologies, comparing leakage and dynamic power, in a Linux environment.</li>
+                <li>Wrote Python scripts to efficiently organize multiple Verilog-written data libraries into Excel spreadsheets.</li>
+              </ul>
+    				</span>
+    			</p>
+    		</div>
+    	</div>
+      <!-- Freescale 2014 -->
+      <div class="experience row">
+    		<div class="col-md-4">
+    			<h4>NXP Semiconductors</h4>
+    			<p class="experience-period"> May 2014 - August 2014 </p>
+          <span class="experience-details">
+            <span class="location">
+              <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+              Austin, TX
+            </span>
+          </span>
+    		</div>
+    		<div class="col-md-8">
+    			<p>
+    				<strong>Technical Marketing Intern</strong>
+    				<span class="hidden-phone">
+              <ul>
+                <li>Tested and validated applications for the Android and iOS audio & accessories market.</li>
+                <li>These applications were displayed during the Freescale Technology Forum.</li>
+                <li>Created application summary pages on Freescale.com, containing information about the different hardware and software specs.</li>
+              </ul>
+    				</span>
+    			</p>
+    		</div>
+    	</div>
+      <!-- Link to resume -->
+      <div class="text-center resume">
+        <a href="https://resume.creddle.io/resume/b31hjruyzby" class="btn btn-primary" target="_blank">Check out my resume!</a>
+      </div>
 
     </div>
     <!-- End Experience section -->
@@ -129,6 +205,31 @@
       </div>
     </div>
     <!-- End Projects section -->
+
+    <!-- Start Contact section -->
+    <div id="contact" class="contact-container">
+      <form id="ajax-contact" method="post" action="mailer.php">
+          <div class="field">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="field">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="field">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <div class="field">
+              <button type="submit">Send</button>
+          </div>
+      </form>
+    </div>
+    <!-- End Contact section -->
 
     <!-- Footer -->
     <footer class="footer">
